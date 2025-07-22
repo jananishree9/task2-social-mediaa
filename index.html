@@ -1,0 +1,8 @@
+<h2>Welcome, {{username}}</h2>
+<a href="/post">Create Post</a> | <a href="/logout">Logout</a>
+<h3>All Posts:</h3>
+{% for post in posts %}
+  <div>
+    <strong>{{post[1]}}</strong>: {{post[2]}}
+  </div>
+{% endfor %}
